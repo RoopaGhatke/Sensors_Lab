@@ -1,14 +1,14 @@
 Module 2: Magnetic Field Measurement with BMM150
 Course: Sensors Lab – Laboratory for Electrical Instrumentation and Embedded Systems
 Institution: IMTEK, University of Freiburg
-Tools Used: Arduino Nicla Sense ME, Arduino IDE, Python (pyserial, NumPy)
+Tools Used: Arduino Nicla Sense ME, Arduino IDE, Python
 
-Overview
+Overview: 
 This module explores the performance of the BMM150 3-axis geomagnetic sensor integrated into the Arduino Nicla Sense ME board. 
 The goal was to analyze the sensor's precision, drift behavior, and its capability to detect the Earth’s magnetic field under static and outdoor conditions. 
 The flip core and Hall effect technologies were evaluated for their accuracy and noise characteristics.
 
-Tasks Performed
+Tasks Performed: 
 Task 1 – Static Sensor Performance
 Collected 1000 samples indoors in a stationary setup to assess sensor drift and noise. X and Y axes (flip core) showed minimal drift, while Z (Hall sensor) exhibited slightly more variance.
 Task 2 – Offset Calculation via Sensor Flipping
@@ -22,17 +22,7 @@ Task 5 – Magnetic Heading Estimation
 Aligned sensor to magnetic North outdoors and measured heading deviation.
 Observed deviation: 2.02°, close to expected 3.24°
 
-Key Results
-Direction	Mean (µT)	Std Dev (µT)
-X	-25.05	0.94
-Y	-83.61	0.49
-Z	-50.17	0.58
-Earth Magnetic Field (outdoor, corrected):
-B_hor: 20.41 µT
-B_vert: 45.09 µT
-B_total: 49.49 µT
-
-Learnings
+Key Learnings: 
 Flip core sensors provide stable and accurate measurements in low-noise conditions.
 Z-axis Hall sensors are more prone to drift and external influences.
 Offset calibration and outdoor testing are crucial for accurate geomagnetic field estimation.
